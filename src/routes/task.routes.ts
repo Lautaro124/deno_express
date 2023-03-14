@@ -11,7 +11,7 @@ const taskRoutes = Router()
 taskRoutes.get('/task', getTasks)
 taskRoutes.get('/task/:id', getTasks)
 taskRoutes.post('/task', createTask)
-taskRoutes.put('/task', changeTask)
-taskRoutes.delete('/task', deleteTask)
+taskRoutes.put('/task/:id', changeTask)
+taskRoutes.delete('/task/:id', deleteTask)
 
 export default taskRoutes
